@@ -38,5 +38,5 @@ I don't see any drawbacks.
 
 Other options we can use here:
 
-- Context or 3rd party library for the shared state (in this case seems as an overkill);
+- Context API or 3rd party library for the shared state (in this case seems as an overkill);
 - We can lift up the state using useEffect inside a Child component but this way seems to be just cluttering the code with unnecessary variables and props drilling, and this is not how the shared state is supposed to maintain;

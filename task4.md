@@ -41,12 +41,12 @@
     3.2. Composition:
       - pros:
           - The code is more transparent, with fewer components that feel like a black box;
-          - No need to use external libraries;
-          - This pattern is recommended by the creators of React to avoid props drilling if it is not some global state which needs to be accessible by many components at different nesting levels;
+          - No need to use external libraries => smaller bundle size;
+          - This pattern is recommended by the creators of React to avoid props drilling;
+          - Reuse components is easier because all data comes from props;
       - cons:
-          - Could be difficult to implement on large-scale applications as the container component could be too nested and splitting could lead to the same props drilling for the global state;
-          - Building good, reusable, effective, and maintainable components requires an advanced understanding of design patterns;
-          - Could look like a move from the "prop drilling" to the "component drilling" if the composition is not intelligent enough;
+          - Could be not the best way for the global state which needs to be accessible by many components at different nesting levels on large-scale applications because the code could be too nested and look like "component drilling" instead of "prop drilling";
+          - Building good, reusable, effective, and maintainable components on a large-scale could require an advanced understanding of design patterns;
       
     3.3. Third-party state management library:
       - pros:
